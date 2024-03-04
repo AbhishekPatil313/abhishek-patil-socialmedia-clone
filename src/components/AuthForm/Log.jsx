@@ -5,8 +5,8 @@ import useLogin from '../../hooks/useLogin';
 function Log() {
 
     const [inputs,setInputs] = useState({
-        email : "",
-        password : "",
+        email : "aman",
+        password : "aman12345",
     })
     const {loading ,  error,login } = useLogin();
   return (
