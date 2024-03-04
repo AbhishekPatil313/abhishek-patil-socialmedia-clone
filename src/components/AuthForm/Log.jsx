@@ -5,8 +5,8 @@ import useLogin from '../../hooks/useLogin';
 function Log() {
 
     const [inputs,setInputs] = useState({
-        email : "aman",
-        password : "aman12345",
+        email : "aman@gmail.com",
+        password : "aman@123",
     })
     const {loading ,  error,login } = useLogin();
   return (
@@ -18,6 +18,7 @@ function Log() {
                 value={inputs.email}
                 onChange={(e)=>setInputs({...inputs,email:e.target.value})}
             />
+            
              <Input
                 placeholder='Password'
                 fontSize={14}
@@ -33,8 +34,9 @@ function Log() {
                 </Alert>
             )}
             <Button w={"full"} isLoading={loading} onClick={()=> login({inputs})} colorScheme='blue' size={"sm"} fontSize={14} >
-                    Login
+                    Login 
             </Button>
+            Click Login to take a demo !
    </>
   )
 }
